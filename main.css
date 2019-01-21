@@ -87,7 +87,7 @@ li {
 }
 
 .nav-link:hover {
-	color: var(--mainYellow);
+	color: var(--mainWhite);
 }
 
 .nav-icon {
@@ -201,7 +201,30 @@ li {
 	height: 0.3rem;
 	background: var(--mainBlue);
 	margin: 1rem auto;
-} 
+}
+
+.video_div {
+	position: relative;
+	overflow: hidden;
+	width: 90%;
+	height: 90%;
+	background-color: var(--transparentBlue);
+}
+
+.video {
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+}
+
+@media screen and (max-width: 500px) {
+	.video {
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
 
 /*Inventory*/
 
@@ -391,8 +414,8 @@ li {
 	font-size: 3rem;
 	transform: translate(-50%, -50%);
 	color: var(--mainBlack);
-	opacity: 0;
-	transition: all 1s ease-in-out;
+	opacity: 1;
+	transition: 1s all;
 }
 
 .img-search:hover {
@@ -422,8 +445,6 @@ li {
 		width: 16.1rem;
 		height: 3.4rem;
 	}
-
-
 }
 
 #contact_div {
@@ -486,7 +507,6 @@ li {
 	}
 }
 
-
 /*Services*/
 
 #services_title {
@@ -510,4 +530,64 @@ li {
 	clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
 	font-weight: bold;
 	border: 2px solid black;
+}
+
+.services_div {
+	background: #f6fdfa;
+	clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+
+}
+
+#repair {
+	background: var(--mainWhite);
+	cursor: pointer;
+}
+
+#replecement {
+	background: var(--mainBlue);
+	cursor: pointer;
+}
+
+#assistance {
+	background: var(--mainBlack);
+	color: var(--mainWhite);
+	cursor: pointer;
+}
+
+#change {
+	background: var(--mainWhite);
+	cursor: pointer;	
+}
+
+.services_options i {
+	font-size: 2.5rem;
+	color: var(--mainYellow);
+}
+.services_options {
+	opacity: .9;
+	text-align: center;
+	margin-top: 3rem;
+}
+
+.services_options:hover {
+	opacity: 1;
+}
+
+/*Footer*/
+
+.footer {
+
+}
+
+.footer i {
+	color: var(--mainYellow);
+	font-size: 2rem;
+	margin: 2rem;
+	cursor: pointer;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+
+.footer i:hover {
+	color: var(--mainWhite);
 }
