@@ -22,6 +22,8 @@ html, body {
 	height: 100%;
 }
 
+/*Preloader*/
+
 .preloader {
 	position: fixed;
 	top: 0;
@@ -36,10 +38,11 @@ html, body {
 	display: none !important;
 }
 
+/*Nav Bar*/
+
 #main_logo {
 	width: 2.2rem;
 	height: 2.2rem;
-
 }
 
 #main_logo:hover {
@@ -65,8 +68,6 @@ html, body {
 li {
 	list-style: none;
 }
-
-/*Nav Bar*/
 
 .navbar {
 	background: var(--mainYellow);
@@ -111,7 +112,6 @@ li {
 	overflow: hidden;
 }
 
-
 .height-max {
 	min-height: calc(100vh - 60px);
 	background: url('Images/main_car_image.jpg');
@@ -124,7 +124,6 @@ li {
 	animation-delay: 2s;
 	animation-iteration-count: infinite;
 }
-
 
 @keyframes zoom{
 	0% {
@@ -217,21 +216,34 @@ li {
 	opacity: .7;
 }
 
+#contact_us {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: bolder;
+	font-size: 4rem;
+	color: var(--mainWhite);
+}
+
 @media screen and (max-width: 500px) {
 	.video {
 		width: 100%;
 		height: 100%;
 	}
 
-}
+	#contact_us {
+		text-align: center;
+		font-size: 2rem;
+	}
 
+}
 
 /*Inventory*/
 
 #inventory {
 	justify-content: center;
 }
-
 
 #inventory_first_section {
 	text-align: center;
@@ -260,7 +272,6 @@ li {
 .car-img {
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
-	max-height: 21rem;
 }
 
 .car-value {
@@ -273,6 +284,12 @@ li {
 
 .car-value:hover {
 	clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media screen and (max-width: 400px) {
+	.car-img {
+		max-height: 20rem;
+	}
 }
 
 /*Question section*/
@@ -414,7 +431,7 @@ li {
 	font-size: 3rem;
 	transform: translate(-50%, -50%);
 	color: var(--mainBlack);
-	opacity: 1;
+	opacity: 0.1;
 	transition: 1s all;
 }
 
@@ -533,7 +550,9 @@ li {
 }
 
 .services_div {
-	background: #f6fdfa;
+	background-image: url('Images/default_cars2.jpg');
+	background-position: center;
+	background-size: cover;
 	clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
 
 }
@@ -573,11 +592,71 @@ li {
 	opacity: 1;
 }
 
-/*Footer*/
+/*What they say*/
 
-.footer {
+#opinion {
+	justify-content: center;
+}
+
+#opinion_first_section {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2rem;
+	clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+	font-weight: bold;
+	background-color: var(--mainWhite);
+}
+
+#opinion_second_section {
+	opacity: .9;
+	text-transform: uppercase;
+	color: var(--mainWhite);
+	font-size: 2rem;
+	text-align: center;
+	clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+	font-weight: bold;
 
 }
+
+
+.user_icon {
+	font-size: 4rem;
+}
+
+.fa-quote-right {
+	font-size: 2rem;
+}
+
+#quote {
+	font-size: .8rem;
+}
+
+.car_user_card {
+	position: relative;
+}
+
+.fa-user-circle {
+	position: absolute;
+	top: 62.5%;
+	left: 50%;
+	transform: translate(-62.5%, -50%);
+}
+
+.user_name {
+	margin-top: 40px;
+	font-size: 3rem;
+}
+
+@media screen and (max-width: 400px) {
+	.fa-user-circle {
+	position: absolute;
+	top: 46.8%;
+	left: 49%;
+	transform: translate(-46.8%, -49%);
+	}
+}
+
+/*Footer*/
 
 .footer i {
 	color: var(--mainYellow);
