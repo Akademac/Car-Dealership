@@ -119,7 +119,7 @@ li {
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	animation-name: zoom; 
+/*	animation-name: zoom;  */
 	animation-duration: 20s;
 	animation-delay: 2s;
 	animation-iteration-count: infinite;
@@ -272,6 +272,7 @@ li {
 .car-img {
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
+	max-height: 336px;
 }
 
 .car-value {
@@ -438,9 +439,10 @@ li {
 .img-search:hover {
 	color: var(--mainWhite);
 	opacity: 1;
+	cursor: pointer;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
 	.img-container {
 		width: 250px;
 		height: 160px;
@@ -618,7 +620,6 @@ li {
 
 }
 
-
 .user_icon {
 	font-size: 4rem;
 }
@@ -637,22 +638,23 @@ li {
 
 .fa-user-circle {
 	position: absolute;
-	top: 62.5%;
+	top: 53%;
 	left: 50%;
-	transform: translate(-62.5%, -50%);
+	transform: translate(-53%, -50%);
 }
 
 .user_name {
 	margin-top: 40px;
 	font-size: 3rem;
+	color: var(--mainBlue);
 }
 
 @media screen and (max-width: 400px) {
 	.fa-user-circle {
 	position: absolute;
-	top: 46.8%;
+	top: 43.8%;
 	left: 49%;
-	transform: translate(-46.8%, -49%);
+	transform: translate(-43.8%, -49%);
 	}
 }
 
@@ -670,3 +672,48 @@ li {
 .footer i:hover {
 	color: var(--mainWhite);
 }
+
+.img-galery {
+	position: absolute;
+	left: -98%;
+	transform: translate(50%, -21.5%);
+	opacity: 1;
+	padding: 0px;
+	padding: 0px;
+	width: 43.75rem!important;
+	height: 31.25rem!important;
+	background-color: var(--mainBlack);
+
+}
+
+@media screen and (max-width: 775px) {
+	.img-galery {
+		position: absolute;
+		left: -25%;
+		transform: translate(50%, -130%);
+		width: 30rem!important;
+		height: 20rem!important;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.img-galery {
+		position: absolute;
+		left: -50%;
+		transform: translate(-75%, 0%);
+		width: 18rem!important;
+		height: 12rem!important;
+	}
+
+} 
+
+@media screen and (max-width: 350px) {
+	.img-galery {
+		position: absolute;
+		left: -55%;
+		transform: translate(-87.9%, -10%);
+		width: 18rem!important;
+		height: 13rem!important;
+	}
+
+} 
